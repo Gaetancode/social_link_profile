@@ -1,8 +1,9 @@
+/* Reset CSS */
 * {
   padding: 0;
   margin: 0;
 }
-/* Beginning of CSS */
+/* Specify my customs color for the whole project */
 :root {
   --green: hsl(75, 94%, 57%);
   --White: hsl(0, 0%, 100%);
@@ -10,7 +11,7 @@
   --DarkGrey: hsl(0, 0%, 12%);
   --OffBlack: hsl(0, 0%, 8%);
 }
-
+/* Basic css rules for the whole project */
 body {
   font-size: 14px;
   font-family: "Inter", sans-serif;
@@ -20,13 +21,13 @@ body {
   align-items: center;
   height: 100vh;
 }
-
+/* CSS for the card ONLY, not the content*/
 .card {
   background-color: var(--DarkGrey);
   border-radius: 10px;
   padding: 20px;
 }
-
+/* Rules for what i called the "HEADER" of the card. It contains the profile picture, the name i put as H1 and the city. */
 header {
   display: flex;
   justify-content: center;
@@ -46,4 +47,9 @@ header {
   p {
     color: var(--green);
   }
+}
+/* Rules for the paragraph tag inside the card div (and not the paragraph tag inside the header as above). That way, i can avoid issue between these two paragraph tag */
+.card > p {
+  color: var(--White);
+  margin-top: 25px;
 }
