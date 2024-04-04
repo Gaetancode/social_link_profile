@@ -25,7 +25,7 @@ body {
 .card {
   background-color: var(--DarkGrey);
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px 30px 15px 30px;
 }
 /* Rules for what i called the "HEADER" of the card. It contains the profile picture, the name i put as H1 and the city. */
 header {
@@ -43,6 +43,7 @@ header {
     color: var(--White);
     font-size: 24px;
     margin-bottom: 10px;
+    font-weight: 400;
   }
   p {
     color: var(--green);
@@ -52,4 +53,24 @@ header {
 .card > p {
   color: var(--White);
   margin-top: 25px;
+  font-weight: 400;
+}
+/* Social media button */
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  .btn {
+    list-style: none;
+    margin: 0 10px;
+    color: var(--White);
+    background-color: var(--Grey);
+    border-radius: 7px;
+    padding: 10px;
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
 }
